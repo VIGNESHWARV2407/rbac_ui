@@ -27,34 +27,6 @@ db.connect((err) => {
   }
 });
 
-
-// // Login Route
-// app.post("/login", (req, res) => {
-//     const sql = "SELECT * FROM all_members WHERE mailId=? AND password=?";
-//     const { email, password } = req.body;
-  
-//     db.query(sql, [email, password], (err, data) => {
-//       if (err) {
-//         console.error("Database query error:", err);
-//         return res.status(500).json("Internal Server Error");
-//       }
-  
-//       if (data.length > 0) {
-//         const user = data[0];
-//         if (user.status === "Inactive") {
-//           return res.status(403).json("User is Inactive. Please contact admin.");
-//         }
-//         return res.json({
-//           message: "Login Successfully",
-//           role: user.role,
-//           name: user.name,
-//         });
-//       } else {
-//         return res.status(404).json("No Record Found");
-//       }
-//     });
-//   });
-
 // Login Route
 app.post("/login", (req, res) => {
     const sql = "SELECT * FROM all_members WHERE mailId=?";
@@ -88,8 +60,6 @@ app.post("/login", (req, res) => {
       }
     });
   });
-  
-
 
 //View List
 app.get('/',(req,res)=>
@@ -133,7 +103,7 @@ app.get('/read/:name',(req,res)=>
 // Update User
 app.put('/edit/:name', (req, res) => {
     const { name } = req.params;
-    const { newName, mailId, password, role } = req.body; // Retrieve updated fields from the request body
+    const { newName, mailId, password, role } = req.body; 
     const sql = "UPDATE all_members SET name=?, mailId=?, password=?, role=? WHERE name=?";
   
     db.query(sql, [newName, mailId, password, role, name], (err, result) => {
@@ -154,8 +124,8 @@ app.delete('/delete/:name', (req, res) => {
 
 // Update User Status
 app.put("/update-status/:name", (req, res) => {
-    const { status } = req.body; // Expecting 'active' or 'inactive'
-    const { name } = req.params; // The name parameter from URL
+    const { status } = req.body; 
+    const { name } = req.params; 
   
     const sql = "UPDATE all_members SET status=? WHERE name=?";
     db.query(sql, [status, name], (err, result) => {
