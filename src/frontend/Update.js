@@ -39,61 +39,7 @@ function Update() {
   };
 
   return (
-    // <div>
-    //   <h2>Update User</h2>
-    //   <form onSubmit={handleSubmit}>
-    //     <div>
-    //     <label>Name</label>
-    //     <input
-    //       type="text"
-    //       value={values.newName}
-    //       onChange={(e) => setValues({ ...values, newName: e.target.value })}
-    //     />
-    //     </div>
-    //     <div>
-    //     <label>Email</label>
-    //     <input
-    //       type="email"
-    //       value={values.mailId}
-    //       onChange={(e) => setValues({ ...values, mailId: e.target.value })}
-    //     />
-    //     </div>
-    //     <div>
-    //     <label>Password</label>
-    //     <input
-    //       type="password"
-    //       value={values.password}
-    //       onChange={(e) => setValues({ ...values, password: e.target.value })}
-    //     />
-    //     </div>
-    //     <div>
-    //     <label>Role</label>
-    //     <div>
-    //       <input
-    //         type="radio"
-    //         name="role"
-    //         value="Admin"
-    //         checked={values.role === "Admin"}
-    //         onChange={(e) => setValues({ ...values, role: e.target.value })}
-    //       />
-    //       Admin
-    //       <input
-    //         type="radio"
-    //         name="role"
-    //         value="User"
-    //         checked={values.role === "User"}
-    //         onChange={(e) => setValues({ ...values, role: e.target.value })}
-    //       />
-    //       User
-    //     </div>
-    //     <div>
-    //     <button type="submit">Update</button>
-
-    //     </div>
-    //     </div>
-    //   </form>
-    // </div>
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100">
   <div className="w-full max-w-lg bg-white rounded-lg shadow-md p-8">
     <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
       Update User
