@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState(""); // To display the response message
+  const [message, setMessage] = useState(""); 
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -41,35 +41,6 @@ function Login() {
   };
 
   return (
-    // <div>
-    //   <div className="sign_in_form">
-    //     <form onSubmit={handleSubmit}>
-    //       <h1>Login</h1>
-    //       <label>Email</label>
-    //       <div>
-    //         <input
-    //           type="email"
-    //           placeholder="Enter your MailID"
-    //           value={email}
-    //           onChange={(e) => setEmail(e.target.value)}
-    //           required
-    //         />
-    //       </div>
-    //       <label>Password</label>
-    //       <div>
-    //         <input
-    //           type="password"
-    //           placeholder="Enter your Password"
-    //           value={password}
-    //           onChange={(e) => setPassword(e.target.value)}
-    //           required
-    //         />
-    //       </div>
-    //       <button type="submit">Sign In</button>
-    //     </form>
-    //     {message && <p>{message}</p>}
-    //   </div>
-    // </div>
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
   <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-md">
     <form onSubmit={handleSubmit} className="space-y-6">
