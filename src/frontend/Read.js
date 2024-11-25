@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 function Read() {
-  const { name } = useParams(); // Retrieve 'name' from route params
-  const [read, setRead] = useState({}); // Initialize state as an object to hold user details
+  const { name } = useParams(); 
+  const [read, setRead] = useState({}); 
 
   useEffect(() => {
     axios
@@ -21,21 +21,6 @@ function Read() {
   }, [name]);
 
   return (
-    // <div>
-    //   <h1>User Details</h1>
-    //   {read ? (
-    //     <>
-    //       <h3>Name: {read.name}</h3>
-    //       <h3>Email: {read.mailId}</h3>
-    //       <h3>Role: {read.role}</h3>
-    //     </>
-    //   ) : (
-    //     <p>No user found</p>
-    //   )}
-    //   <Link to="/admin">Back</Link>
-    //   <Link to={`/edit/${read.name}`}>Edit</Link>
-      
-    // </div>
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
   <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
     <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">
