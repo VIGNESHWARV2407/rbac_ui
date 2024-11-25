@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Role-Based Access Control (RBAC) UI
+This project is all about the Role which can also known as Privilege., to access the web application in a protected manner.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About Assignment
+To evaluate your creativity, understanding, and technical skills in building a Role-Based Access Control (RBAC) User Interface. This assignment is designed to give you the flexibility to showcase your problem-solving abilities and your personal approach to designing secure and functional UIs.
 
-## Available Scripts
+# My Work Done
+Developing a Web Dashboard for RBAC operation with different roles / privileges and make to access as accordingly to their role created or assigned.
 
-In the project directory, you can run:
+# Privileges and Authentication:
+• **Super Admin** can use CRUD (Create, Read, Update and Delete) operations with the credentials of  mail and password and the role as "Super Admin" and also Super Admin can make the all members status "active" and "inactive".<br/>
+• **Admin** can access the table list of all users .,but not the CRUD operations with the credentials of  mail and password and the role as "Admin" and also Admin can access the table list of all users and status too.<br/>
+• **User** can login and no access to CRUD and Table list of all members ., only route to a new page says "Welcome <username>" with the credentials of  mail and password and the role as "User" and User can't login if they are "inactive".
 
-### `npm start`
+# About RBAC_UI:
+**Technologies Used :**<br/>
+**React** for Frontend<br/>
+**Express , Node** for Backend<br/>
+**MySql** for Database and Table Creation<br/>
+**XAMPP** for Database Activation (Server).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Video and PPT
+Hereby i attached the Video and PPT below., for further better understanding of work<br/>
+**PPT link:** https://docs.google.com/presentation/d/1hvb8DesvDJsu4nq4I_RrHuW5T3C4z5zhNjW1BjU6epM/edit?usp=sharing <br/>
+**Video link :** https://drive.google.com/file/d/1y649M0TynJSczWPlWj0HcHy6JA2pErHm/view?usp=sharing
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I hope ., I done my best and I sincerely waiting for your comment and progress<br/>
+Thank you for the Opporunity to showcase myself in a rightful way.. :)
